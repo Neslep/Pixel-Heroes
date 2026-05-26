@@ -1,0 +1,35 @@
+:root {
+  color-scheme: dark;
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  background: #05070f;
+  color: #f8f1d2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#game {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #05070f;
+}
+
+body {
+  image-rendering: pixelated;
+  user-select: none;
+}
+
+canvas {
+  display: block;
+  image-rendering: pixelated;
+}
+
+.game-shell {
+  width: 100%;
+  height: 100%;
+}

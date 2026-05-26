@@ -1,0 +1,93 @@
+export const ENEMIES = {
+  forest_slime: {
+    id: 'forest_slime',
+    name: 'Forest Slime',
+    texture: 'enemy_slime',
+    hp: 34,
+    attack: 8,
+    defense: 1,
+    speed: 72,
+    exp: 18,
+    gold: [4, 8],
+    radius: 18,
+    behavior: 'jumper',
+    attackRange: 38,
+    attackCooldown: 1200,
+    tint: 0x52d273
+  },
+  goblin_rogue: {
+    id: 'goblin_rogue',
+    name: 'Goblin Rogue',
+    texture: 'enemy_goblin',
+    hp: 48,
+    attack: 12,
+    defense: 2,
+    speed: 116,
+    exp: 28,
+    gold: [7, 15],
+    radius: 18,
+    behavior: 'dasher',
+    attackRange: 54,
+    attackCooldown: 1450,
+    tint: 0x8ace5c
+  },
+  crystal_bat: {
+    id: 'crystal_bat',
+    name: 'Crystal Bat',
+    texture: 'enemy_bat',
+    hp: 38,
+    attack: 10,
+    defense: 1,
+    speed: 126,
+    exp: 24,
+    gold: [6, 12],
+    radius: 16,
+    behavior: 'ranged',
+    attackRange: 330,
+    keepRange: 210,
+    attackCooldown: 1600,
+    projectile: 'proj_crystal',
+    tint: 0x81d7ff
+  },
+  skeleton_knight: {
+    id: 'skeleton_knight',
+    name: 'Skeleton Knight',
+    texture: 'enemy_skeleton',
+    hp: 74,
+    attack: 15,
+    defense: 6,
+    speed: 70,
+    exp: 42,
+    gold: [12, 20],
+    radius: 20,
+    behavior: 'soldier',
+    attackRange: 72,
+    attackCooldown: 1850,
+    tint: 0xd8d4c7
+  },
+  corrupted_mage: {
+    id: 'corrupted_mage',
+    name: 'Corrupted Mage',
+    texture: 'enemy_mage',
+    hp: 62,
+    attack: 18,
+    defense: 2,
+    speed: 64,
+    exp: 48,
+    gold: [14, 28],
+    radius: 18,
+    behavior: 'caster',
+    attackRange: 420,
+    keepRange: 260,
+    attackCooldown: 2400,
+    tint: 0xc084fc
+  }
+};
+
+export const FOREST_SPAWN_TABLE = [
+  { value: 'forest_slime', weight: 38 },
+  { value: 'goblin_rogue', weight: 24 },
+  { value: 'crystal_bat', weight: 18 },
+  { value: 'skeleton_knight', weight: 12 },
+  { value: 'corrupted_mage', weight: 8 }
+];
